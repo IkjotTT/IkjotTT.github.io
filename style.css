@@ -50,10 +50,11 @@
 
         a:hover {
             text-decoration: underline;
+            color:red;
         }
 
         a:active {
-            color:red;
+            color:grey;
         }
 
         a:visited {
