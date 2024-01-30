@@ -3,11 +3,12 @@
             max-width: 700px;
             margin: 0 auto;
             padding: 10px;
-            background-color:blueviolet;
+            background-color:purple;
+            color:gold;
         }
 
         h1 {
-            color: #fff315;
+            color: yellow;
         }
 
         h2 {
