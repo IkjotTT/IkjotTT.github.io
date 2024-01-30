@@ -5,21 +5,24 @@
             margin-bottom: 12px;
             margin-left: 12px;
             margin-right: 12px;
-            background-color:rgba(0, 0, 128);
-            color:rgb(255, 166, 0);
+            background-color:rgb(130, 158, 214);
+            color:rgb(106, 45, 192);
             font-size:12pt;
         }
 
         h1 {
-            color:rgb(255, 140, 0);
+            color:rgb(80, 10, 131);
+            font-size: 26pt;
         }
 
         h2 {
-            color: #ea9629;
+            color:rgb(132, 50, 190);
+            font-size: 20pt;
         }
 
         h3 {
-            color: #e8924f;
+            color:rgb(166, 107, 208);
+            font-size: 16pt;
         }
 
         p {
