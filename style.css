@@ -3,20 +3,20 @@
             max-width: 700px;
             margin: 0 auto;
             padding: 10px;
-            background-color:#BBDEFB;
-            color:#455A64;
+            background-color:rgba(0, 0, 128, 0.534);
+            color:rgb(255, 166, 0);
         }
 
         h1 {
-            color:#5C6BC0;
+            color:rgb(255, 140, 0);
         }
 
         h2 {
-            color: #7986CB;
+            color: #ea9629;
         }
 
         h3 {
-            color: #9FA8DA;
+            color: #e8924f;
         }
 
         p {
