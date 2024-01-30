@@ -1,7 +1,10 @@
         body {
             font-family: Arial, sans-serif; 
             max-width: 700px;
-            margin: 0 auto;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            margin-left: 12px;
+            margin-right: 12px;
             padding: 10px;
             background-color:rgba(0, 0, 128);
             color:rgb(255, 166, 0);
