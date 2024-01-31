@@ -43,14 +43,14 @@
         }
 
         a:link {
-            color: #113d88;
+            color: #ff0000;
             text-decoration: none;
             font-weight: bold;
         }
 
         a:hover {
             text-decoration: underline;
-            color:rgb(0, 255, 213);
+            color:rgb(76, 0, 42);
         }
 
         a:active {
@@ -58,5 +58,5 @@
         }
 
         a:visited {
-            color: purple;
+            color: rgb(255, 187, 0);
         }
