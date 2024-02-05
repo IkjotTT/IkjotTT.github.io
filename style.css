@@ -17,9 +17,7 @@
 
         .hero-image {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), img src = ("https://eugateway.in/wp-content/uploads/2022/08/Toronto-Metropolitan-University.jpg");
-            
             height: 50%;
-
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
