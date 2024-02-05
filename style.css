@@ -90,8 +90,3 @@
         tr:nth-child(odd){
             background-color: rgb(255, 255, 255);
         }
-
-        img {
-            float: right
-
-        }
