@@ -81,13 +81,13 @@
         th {
             font-weight: bold;
             background-color:#aec288;
-            color:#f0ead6;
+            color:#ffffff;
         }
 
         tr:nth-child(even) {
-            background-color: #ffffff;
+            background-color: whitesmoke;
         }
 
         tr:nth-child(odd){
-            background-color: #f5eed6;
+            background-color: lightgrey;
         }
