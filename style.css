@@ -92,7 +92,7 @@
         }
 
         .hero-image {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url( "https://eugateway.in/wp-content/uploads/2022/08/Toronto-Metropolitan-University.jpg" );
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://eugateway.in/wp-content/uploads/2022/08/Toronto-Metropolitan-University.jpg");
             
             height: 50%;
 
