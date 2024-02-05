@@ -82,3 +82,11 @@
             background-color:#aec288;
             color:beige;
         }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd){
+            background-color: white;
+        }
