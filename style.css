@@ -8,6 +8,11 @@
             background-color:#f0ead6;
             color:#5d7432;
             font-size:12pt;
+            height: 100%
+        }
+
+        html {
+            height:100%;
         }
 
         h1 {
