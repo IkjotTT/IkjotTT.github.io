@@ -45,12 +45,13 @@
         
         a:link, a:visited {    
             color:#202c08;
-            text-decoration: none;
+            text-decoration: underline;
             font-weight: bold;
         }
 
         a:hover {
-            text-decoration: underline;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
             color:rgb(66, 19, 100);
         }
 
