@@ -45,14 +45,14 @@
         
         a:link 
         a:visited {    
-            color:#303e15;
+            color:#202c08;
             text-decoration: none;
             font-weight: bold;
         }
 
         a:hover {
             text-decoration: underline;
-            color:rgb(39, 119, 51);
+            color:rgb(66, 19, 100);
         }
 
         a:active {
