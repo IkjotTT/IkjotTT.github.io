@@ -43,7 +43,7 @@
 
         
         a:link, a:visited {    
-            color:#ffffff;
+            color:#414141;
             text-decoration: underline;
             font-weight: bold;
         }
@@ -60,11 +60,11 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            border: 2px solid black;
+            border: 2px solid rgb(64, 210, 50);
         }
     
         td {
-            border: 2px solid black;
+            border: 2px solid rgb(75, 172, 27);
             padding: 10px;
         }
         
@@ -78,16 +78,16 @@
         
         th {
             font-weight: bold;
-            background-color:#aec288;
-            color:#ffffff;
+            background-color:#e0e5d8;
+            color:#000000;
         }
 
         tr:nth-child(even) {
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(228, 228, 228);
         }
 
         tr:nth-child(odd){
-            background-color: rgb(35, 33, 33);
+            background-color: rgb(255, 255, 255);
         }
 
           .enlarged { 
