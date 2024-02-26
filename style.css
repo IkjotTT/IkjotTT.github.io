@@ -1,7 +1,7 @@
         body, head{
             font-family: Arial, sans-serif; 
-            background-color:#000000;
-            color:#ffffff;
+            background-color:#ffffff;
+            color:#000000;
             font-size:12pt;
             height: 100%;
             width:100%;
@@ -10,23 +10,23 @@
 
 
         h1 {
-            color:#ffffff;
+            color:#000000;
             font-size: 26pt;
         }
 
         h2 {
-            color:#ffffff;
+            color:#000000;
             font-size: 20pt;
         }
 
         h3 {
-            color:#ffffff;
+            color:#000000;
             font-size: 16pt;
         }
 
         p {
             line-height: 1.6;
-            color:#ffffff;
+            color:#000000;
             font-size: 13pt;
             font-family: 'Times New Roman', Times, serif;
 
