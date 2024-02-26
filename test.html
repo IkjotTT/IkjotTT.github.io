@@ -1,72 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Custom Navigation Menu</title>
-<style>
-  nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  position: relative;
-}
-
-nav ul li a {
-  display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #333;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.dropdown-menu li {
-  display: block;
-}
-
-.dropdown-menu li a {
-  padding: 10px 20px;
-  color: #333;
-  text-decoration: none;
-}
-
-.dropdown-menu li a:hover {
-  background-color: #f4f4f4;
-}
-
-</style>
+    <title>My Website</title>
+    <script src="script.js"></script>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li onmouseover="toggleDropdown(this)" onmouseout="toggleDropdown(this)"><a href="index.html">Home</a></li>
-      <li onmouseover="toggleDropdown(this)" onmouseout="toggleDropdown(this)"><a href="about.html">About</a></li>
-      <li class="dropdown" onmouseover="toggleDropdown(this)" onmouseout="toggleDropdown(this)">
-        <a href="#">Services</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Service 1</a></li>
-          <li><a href="#">Service 2</a></li>
-        </ul>
-      </li>
-      <li class="dropdown" onmouseover="toggleDropdown(this)" onmouseout="toggleDropdown(this)">
-        <a href="#">More</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+    <button onclick="promptForName()">Enter your name</button>
+    <p id="nameOutput"></p>
 
-  <script src="main.js"></script>
+    <img id="myImage" src="images/myself.jpg" onclick="enlargeImage()" />
+
+    <div>
+        <button onclick="toggleMenu()">Menu</button>
+        <ul id="menuItems" style="display: none;">
+            <li onmouseover="highlightItem(this)" onmouseout="unhighlightItem(this)"><a href="page1.html">Page 1</a></li>
+            <li onmouseover="highlightItem(this)" onmouseout="unhighlightItem(this)"><a href="page2.html">Page 2</a></li>
+            <li onmouseover="highlightItem(this)" onmouseout="unhighlightItem(this)">Menu Item 3</li>
+            <li onmouseover="highlightItem(this)" onmouseout="unhighlightItem(this)">Menu Item 4</li>
+        </ul>
+    </div>
 </body>
 </html>
