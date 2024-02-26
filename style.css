@@ -105,7 +105,7 @@
             padding: 0 20px;
         }
         .hero {
-            background-image: url('welcome.jpg');
+            background-image: url('background.jpg');
             background-size: cover;
             height: 400px;
             display: flex;
