@@ -12,9 +12,9 @@ function promptName() {
 
 var image = document.getElementById("myImage");
 image.addEventListener("click", function() {
-    if (image.width == 100) {
+    if (image.width == 150) {
         image.width = 400;
     } else {
-        image.width = 100;
+        image.width = 150;
     }
 });
