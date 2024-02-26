@@ -123,21 +123,13 @@
             color: white;
           }
 
-          .container {
-            display:flex;
-            align-items:center;
-            justify-content: space-between;
-            padding: 20px;
+          .image {
+            width: 50;
+            height: 50;
+            float: right;
+
           }
 
           .text{
-            flex:1;
-            max-width:50%;
-            max-height:10px;
-          }
-
-          .image{
-            flex:1;
-            max-width:10px;
-            max-height:10px;
+            width:50%;
           }
