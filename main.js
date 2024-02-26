@@ -11,3 +11,12 @@ function enlargeImage(img) { // a function that takes in the image, it togglest 
     img.classList.toggle('enlarged');
 }
 
+// JavaScript function to add shadow effect
+function addShadow(element) {
+    element.style.boxShadow = '2px 2px 5px rgba(0, 0, 0, 0.3)';
+}
+
+// JavaScript function to darken background color on mouse out
+function darkenBackground(element) {
+    element.classList.add('mouseout-dark');
+}
