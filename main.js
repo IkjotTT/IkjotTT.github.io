@@ -9,12 +9,3 @@ function promptName() {
         outputElement.innerHTML = "Hello, guest!";
      }
 }
-
-var image = document.getElementById("myImage");
-image.addEventListener("click", function() {
-    if (image.width == 150) {
-        image.width = 400;
-    } else {
-        image.width = 150;
-    }
-});
