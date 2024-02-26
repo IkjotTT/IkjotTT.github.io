@@ -6,13 +6,8 @@ function promptForName() {
     }
 }
 
-function toggleMenu() {
-    var menu = document.getElementById("navigationMenu");
-    if (menu.style.display === "none") {
-        menu.style.display = "block";
-    } else {
-        menu.style.display = "none";
-    }
+function navigateToPage(page) {
+    document.getElementById("content").innerHTML = "<h2>You clicked on " + page + "</h2>";
 }
 
 
