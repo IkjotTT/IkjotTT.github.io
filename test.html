@@ -1,189 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Navigation Menu with Submenus</title>
-    <style>
-        /* Basic CSS reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Body styles */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Navigation styles */
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            position: relative;
-            margin-right: 20px;
-        }
-
-        nav ul li:last-child {
-            margin-right: 0;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 16px;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #ffd700; /* Change to your desired hover color */
-        }
-
-        /* Dropdown styles */
-        .dropdown {
-            position: relative;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #333;
-            min-width: 160px;
-            z-index: 1;
-            padding: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .dropdown-content a {
-            color: #fff;
-            padding: 10px 20px;
-            display: block;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #555;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        /* Submenu styles */
-        .submenu {
-            position: absolute;
-            top: 0;
-            left: 100%;
-            display: none;
-            background-color: #555;
-            min-width: 160px;
-            z-index: 1;
-            padding: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .dropdown:hover .submenu {
-            display: block;
-        }
-
-        .submenu a {
-            color: #fff;
-            padding: 10px 20px;
-            display: block;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .submenu a:hover {
-            background-color: #777;
-        }
-
-        /* Responsive styles */
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            nav ul li {
-                margin-bottom: 10px;
-            }
-
-            .container {
-                padding: 0 10px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube-like Menu</title>
+<style>
+  /* Styles for the menu */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  #menu {
+    background-color: #ff0000; /* YouTube red */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  #menu ul li {
+    margin-right: 20px;
+  }
+  #menu ul li:last-child {
+    margin-right: 0;
+  }
+  #menu ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+</style>
 </head>
 <body>
+<div id="menu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Trending</a></li>
+    <li><a href="#">Subscriptions</a></li>
+  </ul>
+  <ul>
+    <li><a href="#">History</a></li>
+    <li><a href="#">Library</a></li>
+  </ul>
+</div>
+<script>
+  // JavaScript code to handle menu interactions
+  const menu = document.getElementById('menu');
+  const menuItems = menu.getElementsByTagName('a');
 
-<nav>
-    <div class="container">
-        <ul>
-            <li class="dropdown">
-                <a href="#">Page 1</a>
-                <div class="dropdown-content">
-                    <div class="submenu">
-                        <a href="#">Submenu Item 1</a>
-                        <a href="#">Submenu Item 2</a>
-                    </div>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="#">Page 2</a>
-                <div class="dropdown-content">
-                    <div class="submenu">
-                        <a href="#">Submenu Item 3</a>
-                        <a href="#">Submenu Item 4</a>
-                    </div>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="#">Menu</a>
-                <div class="dropdown-content">
-                    <div class="submenu">
-                        <a href="#">Menu Item 1</a>
-                        <a href="#">Menu Item 2</a>
-                    </div>
-                    <div class="submenu">
-                        <a href="#">Menu Item 3</a>
-                        <a href="#">Menu Item 4</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav>
-
+  // Add event listeners to menu items
+  for (let i = 0; i < menuItems.length; i++) {
+    menuItems[i].addEventListener('click', function(event) {
+      // Prevent default behavior of anchor tag
+      event.preventDefault();
+      // Log the clicked menu item to console
+      console.log('Clicked:', menuItems[i].innerText);
+      // You can add further functionality here, such as navigation or showing content related to the clicked item
+    });
+  }
+</script>
 </body>
 </html>
