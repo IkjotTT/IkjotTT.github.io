@@ -6,17 +6,21 @@
 </head>
 
 <body>
-  <button onclick="toggleMenu()">Toggle Menu</button> <!-- Button to toggle menu visibility -->
+  <ul id="navMenu">
+    <li><a href="index.html" onclick="navigateToPage('index.html')">Home</a></li>
+    <li><a href="education.html" onclick="navigateToPage('education.html')">Education</a></li>
+    <li>
+        <a href="#">Services</a>
+        <ul>
+            <li><a href="#" onclick="navigateToPage('service1')">Service 1</a></li>
+            <li><a href="#" onclick="navigateToPage('service2')">Service 2</a></li>
+        </ul>
+    </li>
+</ul>
 
-  <div id="navigationMenu" style="display: none;"> <!-- Navigation menu -->
-      <ul>
-          <li><a href="index.html" onmouseover="changeBackgroundColor('lightblue')" onmouseout="changeBackgroundColor('')">Home</a></li>
-          <li><a href="About Me.html" onmouseover="changeBackgroundColor('lightgreen')" onmouseout="changeBackgroundColor('')">About Me</a></li>
-          <li><a href="#">Menu Item 1</a></li>
-          <li><a href="#">Menu Item 2</a></li>
-      </ul>
-  </div>
+<div id="content">
 
+</div>
 <div class="hero-image">
   <div class="hero-text">
     <h1 style="font-size:50px">Hi, I'm Ikjot Titrie</h1>
