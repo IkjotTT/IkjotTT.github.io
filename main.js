@@ -9,3 +9,15 @@ function promptName() {
         outputElement.innerHTML = "Hello, guest!";
      }
 }
+
+function enlargeImage() {
+    var enlargedImage = document.getElementById("enlarged-image");
+    enlargedImage.style.display = "block";
+  }
+
+window.onclick = function(event) {
+    var enlargedImage = document.getElementById("enlarged-image");
+    if (event.target == enlargedImage) {
+      enlargedImage.style.display = "none";
+    }
+  }
