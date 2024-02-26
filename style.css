@@ -95,18 +95,3 @@
             height: 200px; 
             transition: width 0.5s, height 0.5s; 
         }
-        nav{
-            background-color: #f79F79;
-            position: absolute;
-            width: 150px;
-            height: 100%;
-            }
-            nav a{
-            padding: 15px;
-            display: block;
-            font-size: 25pt;
-            color: #58355E;
-            }
-            nav a:hover{
-            color: #f1f1f1;
-            }
