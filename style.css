@@ -122,3 +122,13 @@
             background-color: #555;
             color: white;
           }
+
+          #myImage {
+            display: block;
+            margin: 0 auto;
+            border: 2px solid #fff; /* Add a white border */
+            border-radius: 50%; /* Make it round */
+            width: 150px; /* Adjust the width */
+            height: 150px; /* Adjust the height */
+            margin-bottom: 20px; /* Add some spacing below the image */
+          }
