@@ -10,22 +10,31 @@
 
 <body>
 
-  <a href="index.html" class="normal-button">Home</a>
+  <div class="navbar">
+    <a href="index.html" class="normal-button">Home</a>
+    
+    <div class="dropdown">
+      <button class="dropbtn">About Me</button>
+      <div class="dropdown-content">
+        <a href="education.html">Education History</a>
+        <a href="bio.html">Biography</a>
+      </div>
+    </div>
+    
+    <div class="dropdown">
+      <button class="dropbtn">Contact</button>
+      <div class="dropdown-content">
+        <a href="#">Social</a>
+        <a href="#">Contact Information</a>
+      </div>
+    </div>
   
-  <div class="dropdown">
-    <button class="dropbtn">About Me</button>
-    <div class="dropdown-content">
-      <a href="education.html">Education History</a>
-      <a href="bio.html">Biography</a>
+  <div class="hero-image">
+    <div class="hero-text">
+      <br><h1 id="name"></h1>
+      <button id="nameButton" onclick="promptName()">Enter Your Name</button>
     </div>
   </div>
-  
-  <div class="dropdown">
-    <button class="dropbtn">Contact</button>
-    <div class="dropdown-content">
-      <a href="#">Social</a>
-      <a href="#">Contact Information</a>
-    </div>
   </div>
   
     <header>
