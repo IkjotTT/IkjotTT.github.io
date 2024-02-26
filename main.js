@@ -6,17 +6,12 @@ function promptForName() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    const dropdowns = document.querySelectorAll('.dropdown');
-  
-    dropdowns.forEach(dropdown => {
-      dropdown.addEventListener('mouseenter', function() {
-        this.querySelector('.dropdown-menu').style.display = 'block';
-      });
-  
-      dropdown.addEventListener('mouseleave', function() {
-        this.querySelector('.dropdown-menu').style.display = 'none';
-      });
-    });
-  });
+function toggleDropdown(element) {
+    const dropdownMenu = element.querySelector('.dropdown-menu');
+    if (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') {
+      dropdownMenu.style.display = 'block';
+    } else {
+      dropdownMenu.style.display = 'none';
+    }
+  }
   
