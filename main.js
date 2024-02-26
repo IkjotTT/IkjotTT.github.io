@@ -15,9 +15,8 @@ function enlargeImage() {
     enlargedImage.style.display = "block";
   }
 
-window.onclick = function(event) {
+ function shrinkImage() {
     var enlargedImage = document.getElementById("enlarged-image");
-    if (event.target == enlargedImage) {
-      enlargedImage.style.display = "none";
-    }
-  }
+    enlargedImage.style.display = "none";
+
+ }
