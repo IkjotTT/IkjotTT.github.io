@@ -10,13 +10,6 @@ function promptName() {
      }
 }
 
-function enlargeImage() {
-    var enlargedImage = document.getElementById("enlarged-image");
-    enlargedImage.style.display = "block";
-  }
-
- function shrinkImage() {
-    var enlargedImage = document.getElementById("enlarged-image");
-    enlargedImage.style.display = "none";
-
- }
+function enlargeImage(img) {
+    img.classList.toggle('enlarged');
+}
