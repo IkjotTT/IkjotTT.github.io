@@ -1,123 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Menu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Navigation Menu</title>
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
+nav ul li {
+  display: inline-block;
+  position: relative;
 }
 
-header {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
+nav ul li:hover > .dropdown-menu {
+  display: block;
 }
 
-.logo {
-    font-weight: bold;
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.menu {
-    list-style: none;
-    display: flex;
+.dropdown-menu li {
+  display: block;
 }
 
-.menu li {
-    margin-right: 20px;
+.dropdown-menu li a {
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
 }
 
-.menu li:last-child {
-    margin-right: 0;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #333;
-}
-
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 4px 0;
-}
-
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .mobile-menu {
-        display: none;
-        padding: 20px;
-    }
-
-    .mobile-menu ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    .mobile-menu ul li {
-        margin-bottom: 10px;
-    }
-
-    .mobile-menu ul li a {
-        color: #333;
-        text-decoration: none;
-    }
+.dropdown-menu li a:hover {
+  background-color: #f4f4f4;
 }
 </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Logo</div>
-                <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-                <div class="menu-toggle">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About</a></li>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <a href="#">Services</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Service 1</a></li>
+          <li><a href="#">Service 2</a></li>
         </ul>
-    </div>
-    <script src="main.js"></script>
+      </li>
+      <li class="dropdown">
+        <a href="#">More</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <script src="main.js"></script>
 </body>
 </html>
