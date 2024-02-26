@@ -4,63 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Custom Navigation Menu</title>
-<style>
-  nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  position: relative;
-}
-
-nav ul li a {
-  display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #333;
-}
-
-nav ul li:hover > .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.dropdown-menu li {
-  display: block;
-}
-
-.dropdown-menu li a {
-  padding: 10px 20px;
-  color: #333;
-  text-decoration: none;
-}
-
-.dropdown-menu li a:hover {
-  background-color: #f4f4f4;
-}
-</style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li class="dropdown">
+      <li onmouseover="toggleDropdown(this)" onmouseout="toggleDropdown(this)"><a href="index.html">Home</a></li>
+      <li onmouseover="toggleDropdown(this)" onmouseout="toggleDropdown(this)"><a href="about.html">About</a></li>
+      <li class="dropdown" onmouseover="toggleDropdown(this)" onmouseout="toggleDropdown(this)">
         <a href="#">Services</a>
         <ul class="dropdown-menu">
           <li><a href="#">Service 1</a></li>
           <li><a href="#">Service 2</a></li>
         </ul>
       </li>
-      <li class="dropdown">
+      <li class="dropdown" onmouseover="toggleDropdown(this)" onmouseout="toggleDropdown(this)">
         <a href="#">More</a>
         <ul class="dropdown-menu">
           <li><a href="#">Contact</a></li>
