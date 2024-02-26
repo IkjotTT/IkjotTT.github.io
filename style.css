@@ -123,12 +123,8 @@
             background-color: #555;
             color: white;
           }
-
-          #enlarged-image {
-            display: none;
-            position: fixed;
-            top: 40%;
-            left: 40%;
-            transform: translate(-40%, -40%);
-            z-index: 9999;
-          }
+          .enlarged {
+            width: 200px; 
+            height: 200px; 
+            transition: width 0.5s, height 0.5s; 
+        }
