@@ -124,6 +124,14 @@
             color: white;
           }
 
-          .text{
-
+          .container {
+            display: flex;
+          }
+          .text {
+            flex: 1;
+            padding: 20px;
+          }
+          .image {
+            flex: 1;
+            padding: 20px;
           }
