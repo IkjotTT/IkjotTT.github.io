@@ -14,18 +14,3 @@ function enlargeImage(img) { // a function that takes in the image, it togglest 
     img.classList.toggle('enlarged');
 }
 
-function showDropdown() {
-    document.querySelector('.dropdown-content').style.display = 'block';
-  }
-  
-  function hideDropdown() {
-    document.querySelector('.dropdown-content').style.display = 'none';
-  }
-  
-  function showSubmenu() {
-    document.querySelector('.submenu-content').style.display = 'block';
-  }
-  
-  function hideSubmenu() {
-    document.querySelector('.submenu-content').style.display = 'none';
-  }
