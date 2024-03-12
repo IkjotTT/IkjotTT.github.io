@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src = "main.js"></script>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html" onmouseover="Shadow(this)" onmouseout="darkBack(this)">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">About Me</button>
+      <div class="dropdown-content">
+        <a href="bio.html" onmouseover="Shadow(this)" onmouseout="darkBack(this)">Biography</a>
+        <a href="education.html" onmouseover="Shadow(this)" onmouseout="darkBack(this)">Education</a>
+        <a href="contact.html" onmouseover="Shadow(this)" onmouseout="darkBack(this)">Contact Me</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Professional</button>
+      <div class="dropdown-content">
+        <a href="#" onmouseover="Shadow(this)" onmouseout="darkBack(this)">Work Experience </a>
+        <a href="#" onmouseover="Shadow(this)" onmouseout="darkBack(this)">Awards</a>
+      </div>
+    </div>
+  </div>
+
+<body>
+    <h1>Contact Me:</h1>
+    <p>You can contact me by filling out this form.</p>
+
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="interests">Interests:</label>
+        <input type="checkbox" id="music" name="interest" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="sports" name="interest" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="books" name="interest" value="books">
+        <label for="books">Books</label><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="button" onclick="clearForm()">Clear</button>
+    </form>
+</body>
+</html>
