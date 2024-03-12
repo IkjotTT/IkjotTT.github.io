@@ -20,39 +20,32 @@ function darkBack(element) { //function takes in a parameter as well as applies 
 
 }
 
+//this is code pertaining to Lab 6: Forms
+//this is an event listener, waits for HTML page to initialize
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("Form");
 
+  //event listener for when the form is submitted while also preventing the submission of a default form
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
 
-function storeFormData(event) {
-    event.preventDefault(); // Prevent form submission
-    const formData = new FormData(event.target); // Get form data
-    const data = {};
-    for (const [key, value] of formData.entries()) {
-      data[key] = value;
-    }
-    localStorage.setItem('formData', JSON.stringify(data)); // Store data in local storage
-  }
-  
-  // Function to clear form fields
+    //code that gets the data entered in the form
+    const formData = new FormData(form);
+    const formObject = {};
+    formData.forEach(function(value, key){
+      formObject[key] = value;
+    });
+
+    //Store the gathered form data into the local storage
+    localStorage.setItem("contactFormData", JSON.stringify(formObject));
+
+    //An alert that prompts the user that submission was successful 
+    alert("Contact Form Submitted!");
+  });
+});
+
+  //A Function to clear form 
   function clearForm() {
-    document.getElementById('contactForm').reset(); // Reset form fields
-    localStorage.removeItem('formData'); // Remove data from local storage
+    document.getElementById('Form').reset(); //resets the form enteries
   }
   
-  // Check if there's stored form data on page load
-  window.onload = function() {
-    const storedData = localStorage.getItem('formData');
-    if (storedData) {
-      const data = JSON.parse(storedData);
-      document.getElementById('name').value = data.name || '';
-      document.getElementById('email').value = data.email || '';
-      document.getElementById('message').value = data.message || '';
-      document.querySelector(`input[name="gender"][value="${data.gender || ''}"]`).checked = true;
-      const interests = data.interests || [];
-      interests.forEach(interest => {
-        document.querySelector(`input[name="interests"][value="${interest}"]`).checked = true;
-      });
-    }
-  };
-  
-  // Add event listener for form submission
-  document.getElementById('contactForm').addEventListener('submit', storeFormData);
