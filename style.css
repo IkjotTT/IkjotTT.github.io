@@ -205,7 +205,8 @@
           
           .radio-group,
           .checkbox-group {
-            margin-left: 20px;
+            display: inline-block;
+            margin-right: 20px;
           }
           
           button {
