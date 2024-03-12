@@ -20,33 +20,39 @@ function darkBack(element) { //function takes in a parameter as well as applies 
 
 }
 
-document.getElementById('myForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    storeFormData();
-});
 
-function storeFormData() {
-    const formData = {};
-    const form = document.getElementById('myForm');
-    
-    formData.name = form.name.value;
-    formData.email = form.email.value;
-    formData.gender = form.gender.value;
-    
-    formData.interests = [];
-    form.querySelectorAll('input[name="interest"]:checked').forEach(function(checkbox) {
-        formData.interests.push(checkbox.value);
-    });
-    
-    formData.message = form.message.value;
-    
-    localStorage.setItem('formData', JSON.stringify(formData));
-    
-    alert('Form data submitted successfully!');
-    form.reset();
-}
 
-function clearForm() {
-    localStorage.removeItem('formData');
-    document.getElementById('myForm').reset();
-}
+function storeFormData(event) {
+    event.preventDefault(); // Prevent form submission
+    const formData = new FormData(event.target); // Get form data
+    const data = {};
+    for (const [key, value] of formData.entries()) {
+      data[key] = value;
+    }
+    localStorage.setItem('formData', JSON.stringify(data)); // Store data in local storage
+  }
+  
+  // Function to clear form fields
+  function clearForm() {
+    document.getElementById('contactForm').reset(); // Reset form fields
+    localStorage.removeItem('formData'); // Remove data from local storage
+  }
+  
+  // Check if there's stored form data on page load
+  window.onload = function() {
+    const storedData = localStorage.getItem('formData');
+    if (storedData) {
+      const data = JSON.parse(storedData);
+      document.getElementById('name').value = data.name || '';
+      document.getElementById('email').value = data.email || '';
+      document.getElementById('message').value = data.message || '';
+      document.querySelector(`input[name="gender"][value="${data.gender || ''}"]`).checked = true;
+      const interests = data.interests || [];
+      interests.forEach(interest => {
+        document.querySelector(`input[name="interests"][value="${interest}"]`).checked = true;
+      });
+    }
+  };
+  
+  // Add event listener for form submission
+  document.getElementById('contactForm').addEventListener('submit', storeFormData);
