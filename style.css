@@ -173,24 +173,54 @@
 
 
 
-        
-        form {
-            width: 50%;
-            margin: 0 auto;
-        }
-        
-        label {
-            display: inline-block;
-            width: 100px;
-            text-align: right;
-        }
-        
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 250px;
-        }
-        
-        button {
-            margin-top: 10px;
-        }
+
+        .container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.radio-group,
+.checkbox-group {
+  margin-bottom: 10px;
+}
+
+.radio-group input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
