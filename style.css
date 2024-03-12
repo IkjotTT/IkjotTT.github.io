@@ -235,3 +235,9 @@
         button:hover {
             background-color: #0056b3;
         }
+
+        
+        ::placeholder {
+            color: #999; 
+            font-style: italic; 
+        }
