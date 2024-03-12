@@ -19,3 +19,34 @@ function darkBack(element) { //function takes in a parameter as well as applies 
     element.classList.add('mouseout-dark');
 
 }
+
+document.getElementById('myForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    storeFormData();
+});
+
+function storeFormData() {
+    const formData = {};
+    const form = document.getElementById('myForm');
+    
+    formData.name = form.name.value;
+    formData.email = form.email.value;
+    formData.gender = form.gender.value;
+    
+    formData.interests = [];
+    form.querySelectorAll('input[name="interest"]:checked').forEach(function(checkbox) {
+        formData.interests.push(checkbox.value);
+    });
+    
+    formData.message = form.message.value;
+    
+    localStorage.setItem('formData', JSON.stringify(formData));
+    
+    alert('Form data submitted successfully!');
+    form.reset();
+}
+
+function clearForm() {
+    localStorage.removeItem('formData');
+    document.getElementById('myForm').reset();
+}
