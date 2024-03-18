@@ -1,0 +1,73 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color:#191825;
+}
+
+.navbar .navbar-brand
+{
+    color:#ffd700;
+    font-size: 20pt;
+}
+
+.navbar a
+{
+    color:#ffd700;
+    font-size:12pt;
+}
+
+.btn-dark
+{
+    width:155px;
+    height:50px;
+    border:2px solid red;
+    outline:none;
+    border-radius:20px;
+    background-color:transparent;
+    color:white;
+}
+
+.btn-dark:hover
+{
+    background-color: red;
+}
+
+img
+{
+    width:100%;
+}
+
+p
+{
+    color:white;
+}
+
+li
+{
+    color:white;
+}
+
+h1
+{
+    color:white;
+}
+
+h2
+{
+    color:white;
+}
+
+h3
+{
+    color:white;
+}
+
+dl, dt
+{
+    color:white;
+}
+
