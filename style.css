@@ -61,7 +61,7 @@ h2
     color:white;
 }
 
-h3
+h3, h4
 {
     color:white;
 }
@@ -71,3 +71,7 @@ dl, dt
     color:white;
 }
 
+th, tr, td
+{
+    color:white;
+}
