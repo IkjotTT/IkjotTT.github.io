@@ -1,187 +1,60 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ikjot Titrie</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ikjot Titrie</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#">Ikjot Titrie</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand me-auto ms-1" href="#">Ikjot Titrie</a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <Menu></Menu>
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-1">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 active" aria-current="page" href="education.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="#" class="download-cv">Download Resume</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="education.html">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Experience</a>
-          </li>
-        </ul>
-      </div>
     </div>
   </nav>
 
-</div>
-<header>
-    <h1>Ikjot Titrie's Academic Record:</h1>
-</header>
-
-<section>
-<header>
-  <h2>Educational Background:</h2>
-</header>
-  <dl>
-    <dt><strong>Harold M Brathwaite Secondary School</strong></dt>
-    <dd>Attended: September 2015 - June 2019</dd>
-    <dt><strong>Toronto Metropolitan University</strong></dt>
-    <dd>Attended: September 2020 - Present</dd>
-  </dl>
-</section>
-
-  <section>
-    <header>
-      <h2>Toronto Metropolitan University</h2>
-    </header>
-    <h3><strong>Bachelor of Commerce (BComm): Business Technology Management</strong></h3>
-    <p>The Toronto Metropolitan University BTM program combines the passion for technology, business, and management together and offers individuals a Bachelor of Commerce. 
-      The program assists individuals in learning how to analyze business needs to design the appropriate technology-based processes and solutions that helps to address those needs.</p>
-
-    <table>
-      <tr>
-      <th>Semester:</th>
-      <th>Courses and GPA:</th>
-      </tr>
-      <tr>
-        <td> Semester 1: Fall 2020 </td>
-        <td>
-          <ol type="1">
-            <li>ITM 100 - Foundations of Information Systems (A+)</li>
-            <li>ITM 107 - Managerial Decision Making (A+)</li>
-            <li>SSH 105 - Critical Thinking I (A)</li>
-            <li>GMS 200 - Introduction to Global Management (A+)</li>
-            <li>CMN 279 - Introduction to Professional Communication (A)</li>
-          </ol>
-        </td>
-      </tr>
-
-      <tr>
-        <td> Semester 2: Winter 2021</td>
-        <td>
-          <ol type="1">
-            <li>CPCS 181 - Introduction to Astronomy (A+)</li>
-            <li>ECN 104 - Introductory Microeconomics (A+)</li>
-            <li>ITM 207 - Computer-Enabled Problem Solving (A)</li>
-            <li>MHR 405 - Organizational Behavior (A+)</li>
-            <li>QMS 210 - Applied Statistics for Business (A+)</li>
-          </ol>
-        </td>
-      </tr>
-
-      <tr>
-        <td> Semester 3: Fall 2021</td>
-        <td>
-          <ol type="1">
-            <li>ACC 100 - Introduction Financial Accounting (A+)</li>
-            <li>CRM 101 - Understanding Crime in Canada (A+)</li>
-            <li>ITM 200 - Fundamentals of Programming (B)</li>
-            <li>ITM 301 - IT Infrastructure (A+)</li>
-            <li>MKT 100 - Principles of Marketing (A+)</li>
-          </ol>
-        </td>
-      </tr>
-
-      <tr>
-        <td> Semester 4: Winter 2022</td>
-        <td>
-          <ol type="1">
-            <li>ACC 406 - Introduction Management Accounting (A)</li>
-            <li>ENG 201 - Myth and Literature (A-)</li>
-            <li>ITM 305 - Systems Analysis and Design (B+)</li>
-            <li>ITM 500 - Data and Information Management (A-)</li>
-            <li>LAW 122 - Business Law (A+)</li>
-          </ol>
-        </td>
-      </tr>
-
-      <tr>
-        <td> Semester 5: Fall 2022</td>
-        <td>
-          <ol type="1">
-            <li>ENG 505 - Creative Writing (A+)</li>
-            <li>ITM 415 - Business Process Management (A-)</li>
-            <li>FIN 300 - Managerial Finance (A-)</li>
-          </ol>      
-        </td>
-      </tr>
-
-      <tr>
-        <td> Semester 6: Winter 2023</td>
-        <td>
-          <ol type="1">
-            <li>ECN 204 - Introductory Macroeconomics (A-)</li>
-            <li>ITM 550 - Advanced E-Business (A-)</li>
-            <li>PHL 522 - Philosophy and Death (A-)</li>
-          </ol>      
-        </td>
-      </tr>
-
-      <tr>
-        <td> Semester 7: Fall 2023</td>
-        <td>
-          <ol type="1">
-            <li>ITM 820 - Info Sys Security and Privacy (A+)</li>
-            <li>ITM 752 - Data Visualization (A-)</li>
-            <li>ITM 706 - Business Intelligence and Analytics (A+)</li>
-            <li>ITM 706 - Enterprise Architecture (A)</li>
-          </ol>      
-        </td>
-      </tr>
-
-      <tr>
-        <td> Semester 8: Winter 2024</td>
-        <td>
-          <ol type="1">
-            <li>GEO 793 - Geography of Toronto</li>
-            <li>ITM 711 - Cloud Computing</li>
-            <li>ITM 750 - IS Project Management</li>
-            <li>ITM 780 - Web Design and Management</li>
-          </ol>      
-        </td>
-      </tr>
-    </table>
-
-
-    <h3>Most Useful/Interesting Elective:</h3> 
-      <h4>ITM 780 - Web Design and Management</h4>
-    <p>The course that was the most useful and interesting to learn and broaden my understanding was ITM 780 - Web Design and Management. ITM 780 gave me hands on experience in creating and designing website using HTML, CSS, and JavaScript. The course itself
-      is extremely interesting as you get to learn about how websites are created and how complex you can make them using just HTML and CSS. This course helps to teach the basics about web design and becomes a foundation to assist in pursuing a career in web development.</p>
-</section>
-
-<section>
-    <h3>Educational Awards</h3>
-    <ul>
-        <li>Dean's List for Academic Excellence 2020 - 2021</li>
-        <li>Dean's List for Academic Excellence 2021 - 2022</li>
-    </ul>
-</section>
-
-<section>
-    <h3>Extra-Curricular Activities</h3>
-    <p>Besides academics, I am a part of ITMSA. ITMSA activities included case competitions or networking events which help to further my career and understanding of the IT field. I also spend majority of my free time volunteering for non-profit organizations in my locality on the weekends.</p>
-</section>
+  <div class="content">
+    <h1 class = "heading ms-3">Hi There!</h1>
+    <p>Hello Welcome to My Website!</p>
+  </div>
 
 </body>
+
 </html>
