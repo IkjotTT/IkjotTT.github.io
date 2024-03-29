@@ -39,7 +39,7 @@ body {
 }
 
 .navbar {
-    padding: 24px;
+    padding: 16px;
 }
 
 .nav-link {
@@ -82,37 +82,38 @@ body {
 .hero-section {
     padding: 100px;
     width: 100%;
+    margin:0;
 }
 
-.text-hero-bold .text-hero-name .text-hero-intro {
+.hero-desc .hero-name .hero-welcome {
     margin: 50px 0;
 }
 
-.text-hero-bold {
+.hero-welcome {
     line-height: 120px;
-    font-size: 4em;
+    font-size: 50px;
     font-weight: 700;
 }
 
-.text-hero-name {
+.hero-name {
     line-height: 91px;
     font-size: 50px;
     font-weight: 700;
 }
 
-.text-hero-intro {
+.hero-desc{
     line-height: 51px;
     font-size: 20px;
     font-weight: 400;
 }
 
-@media (max-width:991px){
+@media (max-width:768px){
     .hero-section{
         text-align:center;
+        margin:2rem 0;
     }
 
-    .text-hero-bold .text-hero-name .text-hero-intro {
+    .hero-desc .hero-name .hero-welcome {
         text-align:center;
-        justify-content: center;
     }
 }
