@@ -64,11 +64,11 @@
       <div class="row align-items-center">
         <div class="col-md-6">
           <h1>Welcome!</h1>
-          <h2>I Am <span style="color:royalblue">Ikjot Titrie</span></h2>
+          <h2>I Am <span style="color:royalblue" id = "element">/span></h2>
           <p>This is a brief introduction about myself and what I do. You can learn more about me by exploring
             the sections below.</p>
           <div class="btns">
-            <a href="#" class="btn btn-primary">LinkedIn</a>
+            <a href="#" class="btn btn-primary">Learn More</a>
             <a href="#" class="btn btn-secondary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
           </div>
         </div>
@@ -80,6 +80,25 @@
   </div>
 
   <!--end of code for hero section-->
+
+
+  <!--a library that provides the functionality for typing-->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Element to contain animated typing -->
+    <span id="element"></span>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Ikjot Titrie'],
+        typeSpeed: 70,
+        loop:true
+      });
+    </script>
+  </body>
 </body>
 
 </html>
