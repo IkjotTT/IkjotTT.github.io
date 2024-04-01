@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ikjot Titrie's Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!--code for a responsive navigation bar from bootstrap components -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #fff;">
+        <div class="container">
+            <a class="navbar-brand me-auto" href="#">Ikjot Titrie</a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <Menu></Menu>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="about.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active mx-lg-2" aria-current='page' href="experience.html">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="download-cv me-2">Download Resume</a>
+            <button class="navbar-toggler me-1" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!--end of code for responsive navigation bar from bootstrap components-->
+
+    <!--start of code for experience section-->
+
+    <div class="container">
+        <div class="experience-intro">
+            <div class="experience-text">
+                <h2>Professional History</h2>
+                <p>Let me introduce you to my professional journey. Below, you'll find details of my work and software
+                    experience alongside my relevant skills. Additionally, you can download a copy of my resume to see a
+                    more detailed summarization of my professional history.</p>
+                <div class="experience-buttons">
+                    <a class="btn btn-primary" href="#experience-start">Explore Work History</a>
+                    <a class="btn btn-secondary" href="#">Download Resume</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="experience" id="experience-start">
+                <h2>Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Sales Representative - Vector Marketing</h3>
+                            <span class="timeline-date">September 2022 - January 2023</span>
+                            <ul>
+                                <li>Presented high quality line of cutlery and culinary items to customers virtually and
+                                    in-home demonstrations.</li>
+                                <li>Established new clientele through referrals and lead generation.</li>
+                                <li>Refined communication skills and polished sales technique.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Sales Associate - GAP</h3>
+                            <span class="timeline-date">September 2019 - April 2020</span>
+                            <ul>
+                                <li>Processesed trasnactions accurately and efficiently, including cash, credit, and
+                                    other forms of payment, while maintaining a high level of customer service.</li>
+                                <li>Assisted customers with inquiries, providing information about products and current
+                                    store promotions, and offered guidance on merchandise to improve the shopping
+                                    experience.</li>
+                                <li>Maintained cleanliness and organization of the checkout and other store areas,
+                                    restocked merchandise and contributed to the store operations and efforts.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="container">
+            <div class="skills">
+                <h2>Coding Proficiencies</h2>
+                <p>I have ammased quite a repitoire of coding experience, here's a few:</p>
+                <div class="skill-bar">
+                    <span class="skill-name">HTML</span>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span class="skill-name">Javascript</span>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                            aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span class="skill-name">C++</span>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span class="skill-name">Raptor</span>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 95%;" aria-valuenow="95"
+                            aria-valuemin="0" aria-valuemax="100">95%</div>
+                    </div>
+                </div>
+
+                <div class="soft-skills">
+                    <h2><br>Soft Skills</h2>
+                    <p>In addition to my technical proficiencies, I possess a diverse set of soft skills that contribute
+                        to my effectiveness in a professional setting, these include and are not limited to the
+                        following:</p>
+                    <ul>
+                        <li>
+                            <p>Ability to convey ideas clearly and effectively, both verbally and in writing.</p>
+                        </li>
+                        <li>
+                            <p>Capacity to analyze situations, identify challenges, and develop practical solutions.</p>
+                        </li>
+                        <li>
+                            <p>Flexibility to adjust to changing circumstances and environments, and willingness to
+                                learn new skills.</p>
+                        </li>
+                        <li>
+                            <p>Skill in prioritizing tasks, meeting deadlines, and efficiently allocating resources.</p>
+                        </li>
+                        <li>
+                            <p>Collaboration with others to achieve common goals, fostering a positive cooperative work
+                                environment.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="software">
+            <div class="container">
+                <div class="row">
+                    <h2>Software</h2>
+                    <p>During my time as a student at TMU, countless courses have provided me familiarity with software,
+                        here are a few I am most proficient with:</p>
+                    <div class="col text-center mt-2">
+                        <i class="fa-solid fa-database SQL-icon"></i>
+                        <h2>SQL Server</h2>
+                    </div>
+                    <div class="col text-center mt-2">
+                        <i class="fa-brands fa-windows windows-icon"></i>
+                        <h2>Office 365 Suite</h2>
+                    </div>
+                    <div class="col text-center mt-2">
+                        <i class="fa-brands fa-python python-icon"></i>
+                        <h2>Python</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--start of code for the footer navigation of the website-->
+
+        <div class="footer">
+            <footer class="bg-dark text-white py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Connect with me:</h5>
+                            <a href="#" class="btn btn-outline-light me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn btn-outline-light me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-outline-light me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn btn-outline-light me-2"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <div class="col-md-6 text-md-start">
+                            <h5>Quick Links:</h5>
+                            <a href="#" class="btn btn-outline-light me-2">Home</a>
+                            <a href="#" class="btn btn-outline-light me-2">About</a>
+                            <a href="#" class="btn btn-outline-light me-2">Portfolio</a>
+                            <a href="#" class="btn btn-outline-light me-2">Services</a>
+                            <a href="#" class="btn btn-outline-light me-2">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!--end of code for the footer navigation of the website-->
+
+</body>
+
+</html>
