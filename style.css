@@ -253,7 +253,7 @@ body {
     position: relative;
     margin: 50px auto;
     padding: 40px 0;
-    width: 90%;
+    width: 100%;
 }
 
 .timeline:before {
