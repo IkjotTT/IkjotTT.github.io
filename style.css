@@ -181,6 +181,13 @@ body {
     }
 }
 
+@media (max-width: 650px){
+    .about-section .img-fluid{
+        width:auto;
+        height:auto;
+    }
+}
+
 .interest-hobbies {
     background-color: #ffffff;
 }
