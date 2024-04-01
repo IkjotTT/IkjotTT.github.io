@@ -314,6 +314,23 @@ body {
     font-size: 4em;
 }
 
+.software-text{
+    text-align:center;
+    padding: 50px;
+}
+
+.software-buttons{
+    line-height: 50px;
+}
+
+.software-buttons .btn-primary{
+    background-color: black;
+}
+
+.software-buttons .btn-secondary{
+    background-color: royalblue;
+}
+
 /*end of CSS styling code for experience page */
 
 
