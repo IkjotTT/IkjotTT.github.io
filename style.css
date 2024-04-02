@@ -419,3 +419,29 @@ body {
         margin-top: 10px;
     }
 }
+
+/* start of CSS styling code for FAQs section */
+
+.FAQs-intro{
+    padding: 100px 0;
+    background-color: #fafafa;
+}
+
+.FAQs-text {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.FAQs-text h2 {
+    line-height: 40px;
+}
+
+.FAQs-buttons {
+    line-height: 50px;
+}
+
+.FAQs-buttons .btn-secondary {
+    background-color: royalblue;
+    border-radius: 50px;
+}
