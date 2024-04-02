@@ -75,6 +75,12 @@ body {
     }
 }
 
+@media (max-width:400px){
+    .download-cv{
+        padding: 8px 10px;
+    }
+}
+
 /*end of CSS styling code for navigation elements */
 
 /*start of CSS styling code for hero-section */
@@ -118,7 +124,7 @@ body {
 }
 
 .btns {
-    line-height: 80px;
+    line-height: 50px;
 }
 
 .btns .btn-primary {
@@ -204,7 +210,7 @@ body {
 }
 
 .btn-education {
-    line-height: 50px;
+    line-height: 80px;
 }
 
 .btn-education .btn-primary {
@@ -341,12 +347,14 @@ body {
 }
 
 .software-text {
-    text-align: center;
-    padding: 30px;
+    padding: 0px;
+    text-align:center;
 }
 
 .software-buttons {
     line-height: 50px;
+    text-align: center;
+    justify-content: center;
 }
 
 .software-buttons .btn-primary {
@@ -355,7 +363,7 @@ body {
 }
 
 .software-buttons .btn-secondary {
-    background-color: royalblue;
+    background-color: #4169e1;
     border-radius: 50px;
 }
 
