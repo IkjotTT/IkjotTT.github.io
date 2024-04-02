@@ -299,11 +299,6 @@ body {
 .experience-intro {
     padding: 100px 0;
     background-color: #fafafa;
-}
-
-.experience-text {
-    max-width: 700px;
-    margin: 0 auto;
     text-align: center;
 }
 
@@ -427,23 +422,18 @@ body {
 
 /* start of CSS styling code for FAQs section */
 
-.FAQs-intro{
-    padding: 100px 0;
+.FAQ-intro{
+    padding: 100px;
     background-color: #fafafa;
-}
-
-.FAQs-text {
-    max-width: 700px;
-    margin: 0 auto;
     text-align: center;
 }
 
-.FAQs-text h2 {
+.FAQ-intro h2 {
     line-height: 40px;
 }
 
 .FAQs-buttons {
-    line-height: 50px;
+    line-height: 100px;
 }
 
 .FAQs-buttons .btn-secondary {
@@ -454,14 +444,9 @@ body {
 .contact-intro{
     padding: 100px 0;
     background-color: #fafafa;
+    text-align:center;
 }
 
-.contact-text {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.contact-text h2 {
+.contact-intro h2 {
     line-height: 40px;
 }
