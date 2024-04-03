@@ -601,6 +601,7 @@ button:hover {
 }
 
 
+/*start of CSS styling for the accessibility options in the footer of website including color and design */
 .theme-btn{
     cursor: pointer;
     border: none;
@@ -671,3 +672,28 @@ button:hover {
         --timeline-item-color:rgb(66, 66, 66);
         --timeline-line-color:aqua;
     }
+
+/*CSS styling code for text-resizing options */
+
+.accessibility .resize{
+    justify-content:baseline;
+}
+
+.accessibility .resize .btn-resize{
+    padding: 0 10px;
+    display: inline-flex;
+    background:var(--button-royal);
+    cursor: pointer;
+}
+
+.accessibility .resize .btn-resize:hover{
+    background-color:var(--button-royal-hover);
+}
+
+.accessibility .resize .btn-resize:nth-child(2){
+    font-size:1.5em;
+}
+
+.accessibility .resize .btn-resize:nth-child(3){
+    font-size:2em;
+}
