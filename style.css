@@ -54,9 +54,25 @@ body {
 .nav-link:hover{
     color:var(--navlink-hover);
 }
+
 .navbar-nav .nav-link.active {
     color: var(--navlink-active);
 }
+
+.offcanvas-body{
+    background-color:var(--bg-color);
+}
+
+.offcanvas-header{
+    background-color:var(--bg-color);
+}
+
+.offcanvas-title{
+    color:var(--text-color);
+    margin-left: -40px;
+    
+}
+
 
 /*this particular code makes it to where the underline does not appear when the size of the browser is shrunk to the point the hamburger menu appears */
 @media (min-width: 991px) {
