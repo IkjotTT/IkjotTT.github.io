@@ -7,14 +7,14 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
+    background-color: var(--bg-color);
     padding: 56px;
 
 }
 
 /*start of CSS code for navigation-related elements */
 .download-cv {
-    background-color: royalblue;
+    background-color:var(--button-royal);
     color: white;
     font-size: 14px;
     padding: 8px 20px;
@@ -24,7 +24,7 @@ body {
 }
 
 .download-cv:hover {
-    background-color: rgb(90, 122, 218);
+    background-color:var(--button-royal-hover);
 }
 
 .navbar-toggler {
@@ -36,21 +36,25 @@ body {
     font-weight: 500;
     padding: 16px;
     font-size: 1.5em;
+    color:var(--navbrand-color)
 }
 
 .navbar {
     padding: 16px;
+    background-color: var(--nav-color);
 }
 
 .nav-link {
-    color: #a1a2af;
+    color: var(--navlink-color);
     font-weight: 500;
     position: relative;
 }
 
-.nav-link:hover,
-.nav-link.active {
-    color: black;
+.nav-link:hover{
+    color:var(--navlink-hover);
+}
+.navbar-nav .nav-link.active {
+    color: var(--navlink-active);
 }
 
 /*this particular code makes it to where the underline does not appear when the size of the browser is shrunk to the point the hamburger menu appears */
@@ -63,7 +67,7 @@ body {
         transform: translateX(-50%);
         width: 0;
         height: 2px;
-        background-color: royalblue;
+        background-color: var(--button-royal);
         visibility: hidden;
         transition: 0.5s, ease-in-out;
     }
@@ -87,33 +91,37 @@ body {
 
 .hero-section {
     padding: 100px 0;
-    background-color: #fafafa;
+    background-color: var(--container-color);
 }
 
 .hero-section h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: var(--text-color);
 }
 
 .hero-section h2 {
     font-size: 2rem;
     margin-bottom: 15px;
+    color: var(--text-color);
 }
 
 .hero-section p {
     font-size: 18px;
     line-height: 1.6;
+    color: var(--text-color);
 }
 
 .hero-section .text {
     flex: 1;
     padding-right: 50px;
+    color: var(--text-color);
 }
 
 .hero-section .img-fluid {
     flex: 1;
     text-align: center;
-    border-radius: 50%;
+    border-radius:50%;
     padding-top: 20px;
 }
 
@@ -128,15 +136,22 @@ body {
 }
 
 .btns .btn-primary {
-    background-color: black;
+    background-color:var(--button-color);
     border-radius: 50px;
 }
 
 .btns .btn-secondary {
-    background-color: #268fc7;
+    background-color: var(--button-linkedin-color);
     border-radius: 50px;
 }
 
+.btns .btn-primary:hover{
+    background-color:var(--button-hover);
+}
+
+.btns .btn-secondary:hover{
+    background-color: var(--button-linkedin-hover);
+}
 /*end of CSS styling code for hero-section*/
 
 
@@ -152,27 +167,37 @@ body {
 }
 
 .about-section {
-    background-color: #fafafa;
+    background-color:var(--container-color);
 }
 
 .about-section h2{
     text-align:center;
     line-height: 15px;
     margin-bottom: 40px;
+    color:var(--text-color);
 }
 .about-section p {
     font-size: 18px;
     line-height: 32px;
+    color:var(--text-color);
 }
 
 .about-section .btn-primary {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--button-color);
     border-radius: 50px;
 }
 
 .about-section .btn-secondary {
-    background-color: rgb(85, 131, 216);
+    background-color:var(--button-royal);
     border-radius: 50px;
+}
+
+.about-section .btn-primary:hover{
+    background-color: var(--button-hover);
+}
+
+.about-section .btn-secondary:hover{
+    background-color: var(--button-royal-hover);
 }
 
 .about-section .about-social-btns{
@@ -205,13 +230,15 @@ body {
 
 .education-section {
     padding: 5px;
-    background-color: #fafafa;
+    background-color: var(--container-color);
     padding-bottom: 20px;
+    color:var(--text-color);
 }
 
 .education-section p {
     font-size: 18px;
     line-height: 32px;
+    color:var(--text-color);
 }
 
 .btn-education {
@@ -219,24 +246,37 @@ body {
 }
 
 .btn-education .btn-primary {
-    background-color: black;
+    background-color: var(--button-color);
     border-radius: 50px;
 }
 
 .btn-education .btn-secondary {
-    background-color: royalblue;
+    background-color: var(--button-royal);
     border-radius: 50px;
 }
+
+.btn-education .btn-secondary:hover{
+    background-color:var(--button-royal-hover);
+
+}
+
+
+.btn-education .btn-primary:hover{
+    background-color:var(--button-hover);
+}
+
 
 .hob-cont {
     padding-top: 45px;
     font-size: 18px;
     line-height: 32px;
+    color:var(--text-color);
 }
 
 .hobbies {
     font-size: 18px;
     line-height: 32px;
+    color:var(--text-color);
 }
 
 @media (max-width:767px) {
@@ -248,8 +288,9 @@ body {
 /*start of CSS styling code for experience page */
 
 .skills {
-    background-color: #fafafa;
+    background-color: var(--container-color);
     padding: 50px;
+    color: var(--text-color);
 }
 
 .skill-bar {
@@ -258,6 +299,7 @@ body {
 
 .skill-name {
     font-weight: bold;
+    color: var(--text-color);
 }
 
 .timeline {
@@ -274,17 +316,18 @@ body {
     bottom: 0;
     left: 50%;
     width: 2px;
-    background: #007bff;
+    background: var(--timeline-line-color);
     transform: translateX(-50%);
 }
 
 .timeline-item {
     margin-bottom: 50px;
     position: relative;
+    color: var(--text-color);
 }
 
 .timeline-item .timeline-content {
-    background: #fafafa;
+    background: var(--timeline-item-color);
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -298,12 +341,14 @@ body {
 
 .experience-intro {
     padding: 100px 0;
-    background-color: #fafafa;
+    background-color:var(--container-color);
     text-align: center;
+    color: var(--text-color);
 }
 
 .experience h2 {
     line-height: 100px;
+    color: var(--text-color);
 }
 
 .experience {
@@ -315,17 +360,26 @@ body {
 }
 
 .experience-buttons .btn-primary {
-    background-color: black;
+    background-color: var(--button-color);
     border-radius: 50px;
 }
 
 .experience-buttons .btn-secondary {
-    background-color: royalblue;
+    background-color: var(--button-royal);
     border-radius: 50px;
+}
+
+.experience-buttons .btn-primary:hover{
+    background-color:var(--button-hover);
+}
+
+.experience-buttons .btn-secondary:hover{
+    background-color: var(--button-royal-hover);
 }
 
 .software {
     padding: 40px;
+    color: var(--text-color);
 }
 
 .software-icons {
@@ -349,6 +403,7 @@ body {
 .software-text {
     padding: 0px;
     text-align:center;
+    color: var(--text-color);
 }
 
 .software-buttons {
@@ -358,13 +413,21 @@ body {
 }
 
 .software-buttons .btn-primary {
-    background-color: black;
+    background-color: var(--button-color);
     border-radius: 50px;
 }
 
 .software-buttons .btn-secondary {
-    background-color: #4169e1;
+    background-color: var(--button-royal);
     border-radius: 50px;
+}
+
+.software-buttons .btn-primary:hover{
+    background-color: var(--button-hover);
+}
+
+.software-buttons .btn-secondary:hover{
+    background-color: var(--button-royal-hover);
 }
 
 /*end of CSS styling code for experience page */
@@ -374,7 +437,10 @@ body {
 
 .footer {
     padding-top: 15px;
+    background-color:var(--footer-bg-color);
+    color:var(--footer-text-color);
 }
+
 
 @media(max-width:1199px) {
     .footer .quick .contact {
@@ -424,12 +490,14 @@ body {
 
 .FAQ-intro{
     padding: 100px;
-    background-color: #fafafa;
+    background-color: var(--container-color);
     text-align: center;
+    color:var(--text-color);
 }
 
 .FAQ-intro h2 {
     line-height: 40px;
+    color:var(--text-color);
 }
 
 .FAQs-buttons {
@@ -437,16 +505,169 @@ body {
 }
 
 .FAQs-buttons .btn-secondary {
-    background-color: royalblue;
+    background-color: var(--button-royal);
     border-radius: 50px;
 }
 
+.FAQs-buttons .btn-secondary:hover{
+    background-color: var(--button-royal-hover);
+}
+
+
+/* start of CSS styling code for contact section */
+
 .contact-intro{
     padding: 100px 0;
-    background-color: #fafafa;
+    background-color:var(--container-color);
     text-align:center;
+    color:var(--text-color);
 }
 
 .contact-intro h2 {
     line-height: 40px;
+    color:var(--text-color);
 }
+
+.contain {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size:14px;
+    color:#000000;
+}
+
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group {
+    display: flex;
+    align-items: flex-start;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.checkbox-group{
+    display:flex;
+    align-items:flex-start;
+}  
+
+.checkbox-group input[type=checkbox]{
+    margin-right:5px
+
+}
+button {
+    padding: 10px 20px;
+    background-color: var(--button-royal);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-royal-hover);
+}
+
+
+::placeholder {
+    color: #999; 
+    font-style: italic; 
+}
+
+
+.theme-btn{
+    cursor: pointer;
+    border: none;
+}
+
+.access{
+    margin-top: 30px;
+}
+
+.theme-btn{
+    width: 3em;
+    height: 3em;
+    padding: 0.5em;
+    border-radius: 50px;
+    cursor: pointer;
+    border:white;
+    background-color:transparent;
+}
+
+.theme-btn:hover{
+    background-color:rgb(97, 89, 89);
+}
+
+.resize{
+    margin-top: 30px;
+}
+
+:root,
+    :root.Default{
+        --bg-color:white;
+        --text-color:black;
+        --nav-color:#ffffff;
+        --container-color: #fafafa;
+        --button-color:rgb(0, 0, 0);
+        --button-text-color:white;
+        --button-hover:rgb(49, 49, 49);
+        --button-linkedin-color: #268fc7;
+        --button-linkedin-hover: #5cb0dd;
+        --navbrand-color:black;
+        --navlink-color:#a1a2af;
+        --navlink-hover:black;
+        --navlink-active:black;
+        --button-royal:royalblue;
+        --button-royal-hover: rgb(90, 122, 218);
+        --footer-bg-color:rgb(37, 37, 37);
+        --footer-text-color: white;
+        --timeline-item-color:#fafafa;
+        --timeline-line-color:#007bff;
+    }
+
+    :root.High-Contrast{
+        --bg-color: black;
+        --text-color:white;
+        --nav-color:#000000;
+        --container-color:black;
+        --button-color:rgb(124, 124, 124);
+        --button-text-color:white;
+        --button-hover:rgb(90, 87, 87);
+        --button-linkedin-color: #30d4d4;
+        --button-linkedin-hover: #20a1a1;
+        --navbrand-color:rgb(255, 255, 255);
+        --navlink-color:#a1a2af;
+        --navlink-hover:white;
+        --navlink-active:white;
+        --button-royal:#30d4d4;
+        --button-royal-hover:#146969;
+        --footer-bg-color:rgb(0, 0, 0);
+        --timeline-item-color:rgb(66, 66, 66);
+        --timeline-line-color:aqua;
+    }
