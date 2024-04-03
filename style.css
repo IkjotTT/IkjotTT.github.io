@@ -458,7 +458,6 @@ body {
     color:var(--footer-text-color);
 }
 
-
 @media(max-width:1199px) {
     .footer .quick .contact {
         margin-top: 10px;
@@ -478,12 +477,10 @@ body {
 }
 
 @media (max-width: 767px){
-    .footer .quick h5{
+    .footer .quick h3{
         line-height:40px;
     }
 }
-
-
 
 @media(max-width:626px) {
     .footer .quick .contact {
@@ -500,6 +497,24 @@ body {
 @media (max-width: 445px){
     .footer .quick .contact, .FAQs, .exp{
         margin-top: 10px;
+    }
+}
+
+@media(max-width:651px){
+    .footer .connect .git{
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:539px){
+    .footer .connect .git, .linked{
+        margin-top:10px;
+    }
+}
+
+@media(max-width:419px){
+    .footer .connect .git, .linked, .insta{
+        margin-top:10px;
     }
 }
 
