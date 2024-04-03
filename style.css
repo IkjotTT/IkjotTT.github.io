@@ -30,6 +30,7 @@ body {
 .navbar-toggler {
     border: none;
     font-size: 1.25em;
+    background-color:var(--toggler-color);
 }
 
 .navbar-brand {
@@ -619,14 +620,12 @@ button:hover {
     cursor: pointer;
     border:white;
     background-color:transparent;
+    border: white;
+    border-style:groove
 }
 
 .theme-btn:hover{
     background-color:rgb(97, 89, 89);
-}
-
-.resize{
-    margin-top: 30px;
 }
 
 :root,
@@ -650,6 +649,7 @@ button:hover {
         --footer-text-color: white;
         --timeline-item-color:#fafafa;
         --timeline-line-color:#007bff;
+        --toggler-color:white;
     }
 
     :root.High-Contrast{
@@ -671,29 +671,5 @@ button:hover {
         --footer-bg-color:rgb(0, 0, 0);
         --timeline-item-color:rgb(66, 66, 66);
         --timeline-line-color:aqua;
+        --toggler-color:white;
     }
-
-/*CSS styling code for text-resizing options */
-
-.accessibility .resize{
-    justify-content:baseline;
-}
-
-.accessibility .resize .btn-resize{
-    padding: 0 10px;
-    display: inline-flex;
-    background:var(--button-royal);
-    cursor: pointer;
-}
-
-.accessibility .resize .btn-resize:hover{
-    background-color:var(--button-royal-hover);
-}
-
-.accessibility .resize .btn-resize:nth-child(2){
-    font-size:1.5em;
-}
-
-.accessibility .resize .btn-resize:nth-child(3){
-    font-size:2em;
-}
