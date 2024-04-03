@@ -1,3 +1,4 @@
+//function that provides the ability to clear the form using the clear button
 function clearForm(){
     document.getElementById('Form').reset();
 }
@@ -17,11 +18,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
         localStorage.setItem("contactFormData", JSON.stringify(formObject));
 
+        //alerts the user that the form was submitted successfully
         alert("Contact From Submitted Successfully!");
 
+        //resets the from once the submission was successful
         document.getElementById("contactForm").reset();
     
     });
 });
 
+
+//this allows to change the contrast between default and high contrast
 const setTheme = theme => document.documentElement.className = theme;
