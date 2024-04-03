@@ -653,13 +653,13 @@ button:hover {
         --button-color:rgb(0, 0, 0);
         --button-text-color:white;
         --button-hover:rgb(49, 49, 49);
-        --button-linkedin-color: #268fc7;
+        --button-linkedin-color: #3b9ad9;
         --button-linkedin-hover: #5cb0dd;
         --navbrand-color:black;
         --navlink-color:#a1a2af;
         --navlink-hover:black;
         --navlink-active:black;
-        --button-royal:royalblue;
+        --button-royal:#4169e1;
         --button-royal-hover: rgb(90, 122, 218);
         --footer-bg-color:rgb(37, 37, 37);
         --footer-text-color: white;
