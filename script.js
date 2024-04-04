@@ -20,8 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         //alerts the user that the form was submitted successfully
         alert("Contact From Submitted Successfully!");
-
-        //resets the from once the submission was successful
         document.getElementById("contactForm").reset();
     
     });
