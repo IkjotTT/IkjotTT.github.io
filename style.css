@@ -72,6 +72,9 @@ body {
     
 }
 
+.btn-close{
+    background-color:var(--offcanvas-close-color);
+}
 
 /*this particular code makes it to where the underline does not appear when the size of the browser is shrunk to the point the hamburger menu appears */
 @media (min-width: 991px) {
@@ -710,6 +713,7 @@ button:hover {
         --timeline-item-color:#fafafa;
         --timeline-line-color:#007bff;
         --toggler-color:white;
+        --offcanvas-close-color:white;
     }
 
     :root.High-Contrast{
@@ -732,4 +736,5 @@ button:hover {
         --timeline-item-color:rgb(66, 66, 66);
         --timeline-line-color:aqua;
         --toggler-color:white;
+        --offcanvas-close-color:rgb(255, 255, 255);
     }
