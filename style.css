@@ -458,21 +458,21 @@ body {
     color:var(--footer-text-color);
 }
 
-@media(max-width:1199px) {
+@media(max-width:1399px) {
     .footer .quick .contact {
         margin-top: 10px;
     }
 }
 
-@media (max-width:991px){
+@media (max-width:1028px){
     .footer .quick .contact, .FAQs{
         margin-top: 10px;
     }
 }
 
-@media (max-width: 767px){
-    .footer .quick .contact, .FAQs{
-        margin-top: 0px;
+@media (max-width: 991px){
+    .footer .quick .contact, .FAQs, .exp{
+        margin-top: 10px;
     }
 }
 
@@ -482,38 +482,57 @@ body {
     }
 }
 
-@media(max-width:626px) {
-    .footer .quick .contact {
-        margin-top: 10px;
+@media(max-width:767px) {
+    .footer .quick .exp, .FAQs {
+        margin-top: 0px;
     }
 }
 
-@media (max-width: 523px){
-    .footer .quick .contact, .FAQs{
-        margin-top: 10px;
+@media(max-width:578px){
+    .footer .quick .FAQs{
+        margin-top:10px;
     }
 }
 
-@media (max-width: 445px){
-    .footer .quick .contact, .FAQs, .exp{
-        margin-top: 10px;
+@media(max-width:500px){
+    .footer .quick .exp{
+        margin-top:10px;
     }
 }
 
-@media(max-width:651px){
+
+@media(max-width:1399px){
     .footer .connect .git{
         margin-top: 10px;
     }
 }
 
-@media(max-width:539px){
+@media(max-width:1199px){
     .footer .connect .git, .linked{
         margin-top:10px;
     }
 }
 
-@media(max-width:419px){
+@media(max-width:817px){
     .footer .connect .git, .linked, .insta{
+        margin-top:10px;
+    }
+}
+
+@media(max-width:767px){
+    .footer .connect .linked, .insta{
+        margin-top:0px;
+    }
+}
+
+@media(max-width:621px){
+    .footer .connect .linked{
+        margin-top:10px;
+    }
+}
+
+@media(max-width: 473px){
+    .footer .connect .insta{
         margin-top:10px;
     }
 }
@@ -668,8 +687,8 @@ button:hover {
         --button-color:rgb(0, 0, 0);
         --button-text-color:white;
         --button-hover:rgb(49, 49, 49);
-        --button-linkedin-color: #3b9ad9;
-        --button-linkedin-hover: #5cb0dd;
+        --button-linkedin-color: #0c4b9e;
+        --button-linkedin-hover: #0e5981;
         --navbrand-color:black;
         --navlink-color:#a1a2af;
         --navlink-hover:black;
