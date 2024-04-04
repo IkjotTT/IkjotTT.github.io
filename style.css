@@ -8,7 +8,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg-color);
-    padding: 56px;
+    margin-top:20px;
 
 }
 
@@ -464,14 +464,8 @@ body {
     }
 }
 
-@media (max-width:1028px){
-    .footer .quick .contact, .FAQs{
-        margin-top: 10px;
-    }
-}
-
 @media (max-width: 991px){
-    .footer .quick .contact, .FAQs, .exp{
+    .footer .quick .FAQs, .exp{
         margin-top: 10px;
     }
 }
@@ -483,23 +477,28 @@ body {
 }
 
 @media(max-width:767px) {
-    .footer .quick .exp, .FAQs {
+    .footer .quick .FAQs{
         margin-top: 0px;
     }
 }
 
-@media(max-width:578px){
-    .footer .quick .FAQs{
-        margin-top:10px;
-    }
-}
-
-@media(max-width:500px){
+@media(max-width:767px) {
     .footer .quick .exp{
-        margin-top:10px;
+        margin-top: 0px;
     }
 }
 
+@media(max-width:466px) {
+    .footer .quick .FAQs{
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:388px) {
+    .footer .quick .exp{
+        margin-top: 10px;
+    }
+}
 
 @media(max-width:1399px){
     .footer .connect .git{
@@ -513,26 +512,14 @@ body {
     }
 }
 
-@media(max-width:817px){
-    .footer .connect .git, .linked, .insta{
-        margin-top:10px;
-    }
-}
-
 @media(max-width:767px){
-    .footer .connect .linked, .insta{
-        margin-top:0px;
-    }
-}
-
-@media(max-width:621px){
     .footer .connect .linked{
-        margin-top:10px;
+        margin-top: 0px;
     }
 }
 
-@media(max-width: 473px){
-    .footer .connect .insta{
+@media(max-width:509px){
+    .footer .connect .linked{
         margin-top:10px;
     }
 }
