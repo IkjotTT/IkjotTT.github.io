@@ -27,7 +27,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 //this allows to change the contrast between default and high contrast
-const setTheme = theme => document.documentElement.className = theme;
+const setTheme = theme => {
+    document.documentElement.className = theme;
+    localStorage.setItem('theme', theme); //makes it to where the theme is saved
+};
+
+//code that enables the contrast to stay the same when going to a different page of the site
+const loadTheme = () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      setTheme(savedTheme);
+    }
+  };
+
+//this allows for the loading of the theme upon the page being loaded
+window.addEventListener('DOMContentLoaded', loadTheme);
 
 
 //code that enables keyboard shortcut use on the website for navigating to different pages
