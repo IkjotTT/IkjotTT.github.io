@@ -191,6 +191,7 @@ body {
     line-height: 15px;
     margin-bottom: 40px;
     color:var(--text-color);
+    font-weight:bold;
 }
 .about-section p {
     font-size: 18px;
@@ -251,6 +252,10 @@ body {
     color:var(--text-color);
 }
 
+.education-section h2{
+    font-weight:bold;
+}
+
 .education-section p {
     font-size: 18px;
     line-height: 32px;
@@ -293,6 +298,10 @@ body {
     font-size: 18px;
     line-height: 32px;
     color:var(--text-color);
+}
+
+.hobbies h2{
+    font-weight:bold;
 }
 
 @media (max-width:767px) {
@@ -365,6 +374,7 @@ body {
 .experience h2 {
     line-height: 100px;
     color: var(--text-color);
+    font-weight:bold;
 }
 
 .experience {
@@ -444,6 +454,18 @@ body {
 
 .software-buttons .btn-secondary:hover{
     background-color: var(--button-royal-hover);
+}
+
+.experience-intro h2{
+    font-weight:bold;
+}
+
+.skills h2{
+    font-weight:bold;
+}
+
+.software h2{
+    font-weight:bold;
 }
 
 /*end of CSS styling code for experience page */
@@ -535,6 +557,7 @@ body {
 .FAQ-intro h2 {
     line-height: 40px;
     color:var(--text-color);
+    font-weight:bold;
 }
 
 .FAQs-buttons {
@@ -563,6 +586,7 @@ body {
 .contact-intro h2 {
     line-height: 40px;
     color:var(--text-color);
+    font-weight:bold;
 }
 
 .contain {
