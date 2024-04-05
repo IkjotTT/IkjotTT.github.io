@@ -53,7 +53,7 @@ document.addEventListener('keydown', function(event) {
     } else if (event.altKey && event.key === '2') {
         //ALT+2 is pressed to go to the about page
         window.location.href = 'about.html';
-    } else if (event.altKeyKey && event.key === '3') {
+    } else if (event.altKey && event.key === '3') {
         //ALT+3 is pressed to go to the experience page
         window.location.href = 'experience.html';
     } else if (event.altKey && event.key === '4') {
