@@ -305,6 +305,7 @@ body {
     font-size: 18px;
     line-height: 32px;
     color:var(--text-color);
+    margin-bottom:20px;
 }
 
 .hobbies h2{
