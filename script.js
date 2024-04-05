@@ -47,20 +47,20 @@ window.addEventListener('DOMContentLoaded', loadTheme);
 //code that enables keyboard shortcut use on the website for navigating to different pages
 document.addEventListener('keydown', function(event) {
     // Checking if CTRL key is pressed along with the specified numbered key
-    if (event.ctrlKey && event.key === '1') {
-        //CTRL+1 is pressed to go to the homepage
+    if (event.altKey && event.key === '1') {
+        //ALT+1 is pressed to go to the homepage
         window.location.href = 'index.html';
-    } else if (event.ctrlKey && event.key === '2') {
-        //CTRL+1 is pressed to go to the about page
+    } else if (event.altKey && event.key === '2') {
+        //ALT+2 is pressed to go to the about page
         window.location.href = 'about.html';
-    } else if (event.ctrlKey && event.key === '3') {
-        //CTRL+1 is pressed to go to the experience page
+    } else if (event.altKeyKey && event.key === '3') {
+        //ALT+3 is pressed to go to the experience page
         window.location.href = 'experience.html';
-    } else if (event.ctrlKey && event.key === '4') {
-        //CTRL+1 is pressed to go to the FAQs page
+    } else if (event.altKey && event.key === '4') {
+        //ALTL+4 is pressed to go to the FAQs page
         window.location.href = 'FAQs.html';
-    } else if (event.ctrlKey && event.key === '5') {
-        //CTRL+1 is pressed to go to the contact page
+    } else if (event.altKey && event.key === '5') {
+        //ALT+5 is pressed to go to the contact page
         window.location.href = 'contact.html';
     }
 });
