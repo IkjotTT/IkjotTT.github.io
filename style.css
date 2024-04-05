@@ -44,6 +44,10 @@ body {
     background-color: var(--nav-color);
 }
 
+.navbar-brand:hover{
+    color:var(--button-hover);
+}
+
 .nav-link {
     color: var(--navlink-color);
     font-weight: 500;
