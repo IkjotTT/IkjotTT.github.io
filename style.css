@@ -1,0 +1,137 @@
+/*the url for the Poppins font from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    padding: 56px;
+
+}
+
+/*start of CSS code for navigation-related elements */
+.download-cv {
+    background-color: royalblue;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.download-cv:hover {
+    background-color: rgb(90, 122, 218);
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25em;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    padding: 16px;
+    font-size: 1.5em;
+}
+
+.navbar {
+    padding: 16px;
+}
+
+.nav-link {
+    color: #a1a2af;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: black;
+}
+
+/*this particular code makes it to where the underline does not appear when the size of the browser is shrunk to the point the hamburger menu appears */
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: royalblue;
+        visibility: hidden;
+        transition: 0.5s, ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+/*end of CSS styling code for navigation elements */
+
+/*start of CSS styling code for hero-section */
+
+.hero-section {
+    padding: 50px 0;
+    background-color: #fafafa;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.hero-section .text {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero-section .img-fluid {
+    flex: 1;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 20px;
+}
+
+@media (max-width:767px) {
+    .hero-section .btns {
+        text-align: center;
+    }
+
+    .hero-section .h1 .hero-section .h2 .hero-section p {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.btns{
+    line-height:80px;
+}
+
+.btns .btn-primary {
+    background-color: black;
+    border-radius: 50px;
+}
+
+.btns .btn-secondary {
+    background-color: #268fc7;
+    border-radius: 50px;
+}
