@@ -8,11 +8,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg-color);
-<<<<<<< HEAD
     margin-top:50px;
-=======
-    margin-top:10px;
->>>>>>> b670c55a0e2175ceafe8a0429958c75b7bae79dc
 
 }
 
@@ -755,8 +751,4 @@ button:hover {
         --timeline-item-color:rgb(66, 66, 66);
         --timeline-line-color:aqua;
         --toggler-color:white;
-<<<<<<< HEAD
     }
-=======
-    }
->>>>>>> b670c55a0e2175ceafe8a0429958c75b7bae79dc
