@@ -1,0 +1,762 @@
+/*the url for the Poppins font from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+<<<<<<< HEAD
+    margin-top:50px;
+=======
+    margin-top:10px;
+>>>>>>> b670c55a0e2175ceafe8a0429958c75b7bae79dc
+
+}
+
+/*start of CSS code for navigation-related elements */
+.download-cv {
+    background-color:var(--button-royal);
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.download-cv:hover {
+    background-color:var(--button-royal-hover);
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25em;
+    background-color:var(--toggler-color);
+}
+
+.navbar-brand {
+    font-weight: 500;
+    padding: 16px;
+    font-size: 1.5em;
+    color:var(--navbrand-color)
+}
+
+.navbar {
+    padding: 16px;
+    background-color: var(--nav-color);
+}
+
+.nav-link {
+    color: var(--navlink-color);
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover{
+    color:var(--navlink-hover);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--navlink-active);
+}
+
+.offcanvas-body{
+    background-color:var(--bg-color);
+}
+
+.offcanvas-header{
+    background-color:var(--bg-color);
+}
+
+.offcanvas-title{
+    color:var(--text-color);
+    margin-left: -40px;
+    
+}
+
+
+/*this particular code makes it to where the underline does not appear when the size of the browser is shrunk to the point the hamburger menu appears */
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: var(--button-royal);
+        visibility: hidden;
+        transition: 0.5s, ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+@media (max-width:400px){
+    .download-cv{
+        padding: 8px 10px;
+    }
+}
+
+/*end of CSS styling code for navigation elements */
+
+/*start of CSS styling code for hero-section */
+
+.hero-section {
+    padding: 100px 0;
+    background-color: var(--container-color);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.hero-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.hero-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.hero-section .text {
+    flex: 1;
+    padding-right: 50px;
+    color: var(--text-color);
+}
+
+.hero-section .img-fluid {
+    flex: 1;
+    text-align: center;
+    border-radius:50%;
+    padding-top: 20px;
+}
+
+@media (max-width:767px) {
+    .hero-section .btns {
+        text-align: center;
+    }
+}
+
+.btns {
+    line-height: 50px;
+}
+
+.btns .btn-primary {
+    background-color:var(--button-color);
+    border-radius: 50px;
+}
+
+.btns .btn-secondary {
+    background-color: var(--button-linkedin-color);
+    border-radius: 50px;
+}
+
+.btns .btn-primary:hover{
+    background-color:var(--button-hover);
+}
+
+.btns .btn-secondary:hover{
+    background-color: var(--button-linkedin-hover);
+}
+/*end of CSS styling code for hero-section*/
+
+
+/*this is styling code for the about page */
+
+.about-section {
+    padding: 100px 0;
+}
+
+.about-section .img-fluid {
+    width: 600px;
+    height: 550px;
+}
+
+.about-section {
+    background-color:var(--container-color);
+}
+
+.about-section h2{
+    text-align:center;
+    line-height: 15px;
+    margin-bottom: 40px;
+    color:var(--text-color);
+}
+.about-section p {
+    font-size: 18px;
+    line-height: 32px;
+    color:var(--text-color);
+}
+
+.about-section .btn-primary {
+    background-color: var(--button-color);
+    border-radius: 50px;
+}
+
+.about-section .btn-secondary {
+    background-color:var(--button-royal);
+    border-radius: 50px;
+}
+
+.about-section .btn-primary:hover{
+    background-color: var(--button-hover);
+}
+
+.about-section .btn-secondary:hover{
+    background-color: var(--button-royal-hover);
+}
+
+.about-section .about-social-btns{
+    line-height: 10px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 991px ){
+    .about-section .about-social-btns{
+        text-align:center;
+    }
+}
+
+@media (max-width: 409px){
+    .about-section .about-social-btns{
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 650px){
+    .about-section .img-fluid{
+        width:auto;
+        height:auto;
+    }
+}
+
+.interest-hobbies {
+    background-color: #ffffff;
+}
+
+.education-section {
+    padding: 5px;
+    background-color: var(--container-color);
+    padding-bottom: 20px;
+    color:var(--text-color);
+}
+
+.education-section p {
+    font-size: 18px;
+    line-height: 32px;
+    color:var(--text-color);
+}
+
+.btn-education {
+    line-height: 80px;
+}
+
+.btn-education .btn-primary {
+    background-color: var(--button-color);
+    border-radius: 50px;
+}
+
+.btn-education .btn-secondary {
+    background-color: var(--button-royal);
+    border-radius: 50px;
+}
+
+.btn-education .btn-secondary:hover{
+    background-color:var(--button-royal-hover);
+
+}
+
+
+.btn-education .btn-primary:hover{
+    background-color:var(--button-hover);
+}
+
+
+.hob-cont {
+    padding-top: 45px;
+    font-size: 18px;
+    line-height: 32px;
+    color:var(--text-color);
+}
+
+.hobbies {
+    font-size: 18px;
+    line-height: 32px;
+    color:var(--text-color);
+}
+
+@media (max-width:767px) {
+    .btn-education {
+        text-align: center;
+    }
+}
+
+/*start of CSS styling code for experience page */
+
+.skills {
+    background-color: var(--container-color);
+    padding: 50px;
+    color: var(--text-color);
+}
+
+.skill-bar {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: var(--timeline-line-color);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+    color: var(--text-color);
+}
+
+.timeline-item .timeline-content {
+    background: var(--timeline-item-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item .timeline-date {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.experience-intro {
+    padding: 100px 0;
+    background-color:var(--container-color);
+    text-align: center;
+    color: var(--text-color);
+}
+
+.experience h2 {
+    line-height: 100px;
+    color: var(--text-color);
+}
+
+.experience {
+    padding: 20px;
+}
+
+.experience-buttons {
+    line-height: 50px;
+}
+
+.experience-buttons .btn-primary {
+    background-color: var(--button-color);
+    border-radius: 50px;
+}
+
+.experience-buttons .btn-secondary {
+    background-color: var(--button-royal);
+    border-radius: 50px;
+}
+
+.experience-buttons .btn-primary:hover{
+    background-color:var(--button-hover);
+}
+
+.experience-buttons .btn-secondary:hover{
+    background-color: var(--button-royal-hover);
+}
+
+.software {
+    padding: 40px;
+    color: var(--text-color);
+}
+
+.software-icons {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.python-icon {
+    font-size: 4em;
+}
+
+.windows-icon {
+    font-size: 4em;
+    color: rgb(32, 203, 233);
+}
+
+.SQL-icon {
+    font-size: 4em;
+}
+
+.software-text {
+    padding: 0px;
+    text-align:center;
+    color: var(--text-color);
+}
+
+.software-buttons {
+    line-height: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.software-buttons .btn-primary {
+    background-color: var(--button-color);
+    border-radius: 50px;
+}
+
+.software-buttons .btn-secondary {
+    background-color: var(--button-royal);
+    border-radius: 50px;
+}
+
+.software-buttons .btn-primary:hover{
+    background-color: var(--button-hover);
+}
+
+.software-buttons .btn-secondary:hover{
+    background-color: var(--button-royal-hover);
+}
+
+/*end of CSS styling code for experience page */
+
+
+/* start of CSS styling code for footer */
+
+.footer {
+    padding-top: 15px;
+    background-color:var(--footer-bg-color);
+    color:var(--footer-text-color);
+}
+
+@media(max-width:1399px) {
+    .footer .quick .contact {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:1028px){
+    .footer .quick .contact, .FAQs{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 991px){
+    .footer .quick .contact, .FAQs, .exp{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px){
+    .footer .quick h3{
+        line-height:40px;
+    }
+}
+
+@media(max-width:767px) {
+    .footer .quick .exp, .FAQs {
+        margin-top: 0px;
+    }
+}
+
+@media(max-width:578px){
+    .footer .quick .FAQs{
+        margin-top:10px;
+    }
+}
+
+@media(max-width:500px){
+    .footer .quick .exp{
+        margin-top:10px;
+    }
+}
+
+
+@media(max-width:1399px){
+    .footer .connect .git{
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:1199px){
+    .footer .connect .git, .linked{
+        margin-top:10px;
+    }
+}
+
+@media(max-width:817px){
+    .footer .connect .git, .linked, .insta{
+        margin-top:10px;
+    }
+}
+
+@media(max-width:767px){
+    .footer .connect .linked, .insta{
+        margin-top:0px;
+    }
+}
+
+@media(max-width:621px){
+    .footer .connect .linked{
+        margin-top:10px;
+    }
+}
+
+@media(max-width: 473px){
+    .footer .connect .insta{
+        margin-top:10px;
+    }
+}
+
+/* start of CSS styling code for FAQs section */
+
+.FAQ-intro{
+    padding: 100px;
+    background-color: var(--container-color);
+    text-align: center;
+    color:var(--text-color);
+}
+
+.FAQ-intro h2 {
+    line-height: 40px;
+    color:var(--text-color);
+}
+
+.FAQs-buttons {
+    line-height: 100px;
+}
+
+.FAQs-buttons .btn-secondary {
+    background-color: var(--button-royal);
+    border-radius: 50px;
+}
+
+.FAQs-buttons .btn-secondary:hover{
+    background-color: var(--button-royal-hover);
+}
+
+
+<<<<<<< HEAD
+.FAQ-intro .container {
+    max-width: 100%;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.accordion-item {
+    width: 100%;
+}
+
+
+.accordion-button {
+    width: 100%; 
+    text-align: left; 
+}
+
+
+.accordion-body {
+    width: 100%; 
+}
+
+
+
+=======
+>>>>>>> b670c55a0e2175ceafe8a0429958c75b7bae79dc
+/* start of CSS styling code for contact section */
+
+.contact-intro{
+    padding: 100px 0;
+    background-color:var(--container-color);
+    text-align:center;
+    color:var(--text-color);
+}
+
+.contact-intro h2 {
+    line-height: 40px;
+    color:var(--text-color);
+}
+
+.contain {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size:14px;
+    color:#000000;
+}
+
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group {
+    display: flex;
+    align-items: flex-start;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.checkbox-group{
+    display:flex;
+    align-items:flex-start;
+}  
+
+.checkbox-group input[type=checkbox]{
+    margin-right:5px
+
+}
+button {
+    padding: 10px 20px;
+    background-color: var(--button-royal);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-royal-hover);
+}
+
+
+::placeholder {
+    color: #999; 
+    font-style: italic; 
+}
+
+
+/*start of CSS styling for the accessibility options in the footer of website including color and design */
+.theme-btn{
+    cursor: pointer;
+    border: none;
+}
+
+.access{
+    margin-top: 30px;
+}
+
+.theme-btn{
+    width: 3em;
+    height: 3em;
+    padding: 0.5em;
+    border-radius: 50px;
+    cursor: pointer;
+    border:white;
+    background-color:transparent;
+    border: white;
+    border-style:groove
+}
+
+.theme-btn:hover{
+    background-color:rgb(97, 89, 89);
+}
+
+:root,
+    :root.Default{
+        --bg-color:white;
+        --text-color:black;
+        --nav-color:#ffffff;
+        --container-color: #fafafa;
+        --button-color:rgb(0, 0, 0);
+        --button-text-color:white;
+        --button-hover:rgb(49, 49, 49);
+        --button-linkedin-color: #0c4b9e;
+        --button-linkedin-hover: #0e5981;
+        --navbrand-color:black;
+        --navlink-color:#a1a2af;
+        --navlink-hover:black;
+        --navlink-active:black;
+        --button-royal:#4169e1;
+        --button-royal-hover: rgb(90, 122, 218);
+        --footer-bg-color:rgb(37, 37, 37);
+        --footer-text-color: white;
+        --timeline-item-color:#fafafa;
+        --timeline-line-color:#007bff;
+        --toggler-color:white;
+    }
+
+    :root.High-Contrast{
+        --bg-color: black;
+        --text-color:white;
+        --nav-color:#000000;
+        --container-color:black;
+        --button-color:rgb(124, 124, 124);
+        --button-text-color:white;
+        --button-hover:rgb(90, 87, 87);
+        --button-linkedin-color: #30d4d4;
+        --button-linkedin-hover: #20a1a1;
+        --navbrand-color:rgb(255, 255, 255);
+        --navlink-color:#a1a2af;
+        --navlink-hover:white;
+        --navlink-active:white;
+        --button-royal:#30d4d4;
+        --button-royal-hover:#146969;
+        --footer-bg-color:rgb(0, 0, 0);
+        --timeline-item-color:rgb(66, 66, 66);
+        --timeline-line-color:aqua;
+        --toggler-color:white;
+<<<<<<< HEAD
+    }
+=======
+    }
+>>>>>>> b670c55a0e2175ceafe8a0429958c75b7bae79dc
